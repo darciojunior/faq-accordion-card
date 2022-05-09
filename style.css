@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)) no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    width: 1440px;
+    height: 720px;
+    overflow: hidden;
+    padding: 80px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.imagem {
+    width: 50%;
+}
+
+.faq {
+    width: 50%;
+}
+
+.titulo {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.box-faq {
+    position: relative;
+    border-bottom: hsl(240, 5%, 91%) 1px solid;
+    padding: 15px;
+    display: flex;
+}
+
+.seta {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    width: 20px;
+    height: 15px;
+}
+
+.seta.active {
+    transform: rotate(180deg);
+}
+
+.perg {
+    margin-bottom: 10px;
+}
+
+.perg:hover {
+    color: hsl(61, 39%, 47%);
+    font-weight: bold;
+}
+
+.perg.active {
+    font-weight: bold;
+}
+
+.perg.active:hover {
+    color: black;
+}
+
+.resp {
+    width: 90%;
+    display: none;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.resp.active {
+    display: inherit;
+}
+
+.img-fundo {
+    width: 100%;
+    position: absolute;
+    left: -55%;
+    top: -55%;
+}
+
+.img-mulher {
+    width: 50%;
+    position: absolute;
+    left: -100px;
+}
+
+.img-caixa {
+    width: 15%;
+    position: absolute;
+    left: 100px;
+    top: 400px;
+    z-index: 1;
+}

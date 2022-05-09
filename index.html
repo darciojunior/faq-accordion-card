@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <img class="img-caixa" src="./images/illustration-box-desktop.svg" alt="">
+  <div class="card">
+    <div class="imagem">
+      <img class="img-fundo" src="./images/bg-pattern-desktop.svg" alt="">
+      <img class="img-mulher" src="./images/illustration-woman-online-desktop.svg" alt="">
+    </div>
+
+    <div class="faq">
+      <p class="titulo">FAQ</p>
+
+      <a class="link" onclick="openFaq(id)" id="0">
+        <div class="box-faq">
+          <div>
+            <div class="perg">
+              How many team members can I invite?
+            </div>
+            <div class="resp">
+              You can invite up to 2 additional users on the Free plan. There is no limit on
+              team members for the Premium plan.
+            </div>
+          </div>
+          <img class="seta" src="./images/icon-arrow-down.svg" alt="">
+        </div>
+      </a>
+
+      <a class="link" onclick="openFaq(id)" id="1">
+        <div class="box-faq">
+          <div>
+            <div class="perg">
+              What is the maximum file upload size?
+            </div>
+            <div class="resp">
+              No more than 2GB. All files in your account must fit your allotted storage space.
+            </div>
+          </div>
+          <img class="seta" src="./images/icon-arrow-down.svg" alt="">
+        </div>
+      </a>
+
+      <a class="link" onclick="openFaq(id)" id="2">
+        <div class="box-faq">
+          <div>
+            <div class="perg">
+              How do I reset my password?
+            </div>
+            <div class="resp">
+              Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.
+            </div>
+          </div>
+          <img class="seta" src="./images/icon-arrow-down.svg" alt="">
+        </div>
+      </a>
+
+      <a class="link" onclick="openFaq(id)" id="3">
+        <div class="box-faq">
+          <div>
+            <div class="perg">
+              Can I cancel my subscription?
+            </div>
+            <div class="resp">
+              Yes! Send us a message and we’ll process your request no questions asked.
+            </div>
+          </div>
+          <img class="seta" src="./images/icon-arrow-down.svg" alt="">
+        </div>
+      </a>
+
+      <a class="link" onclick="openFaq(id)" id="4">
+        <div class="box-faq">
+          <div>
+            <div class="perg">
+              Do you provide additional support?
+            </div>
+            <div class="resp">
+              Chat and email support is available 24/7. Phone lines are open during normal business hours.
+            </div>
+          </div>
+          <img class="seta" src="./images/icon-arrow-down.svg" alt="">
+        </div>
+    </div></a>
+
+  </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script>
+
+    function openFaq(id) {
+      let pergunta = document.querySelectorAll('.perg')[id]
+      let resposta = document.querySelectorAll('.resp')[id]
+      let seta = document.querySelectorAll('.seta')[id]
+
+      console.log(seta)
+
+      pergunta.classList.toggle('active')
+      resposta.classList.toggle('active')
+      seta.classList.toggle('active')
+    }
+
+  </script>
+
+</body>
+
+</html>
